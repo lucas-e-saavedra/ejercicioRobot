@@ -62,7 +62,7 @@ namespace WindowsFormsApp1
             // 
             this.lblRight.AutoSize = true;
             this.lblRight.Location = new System.Drawing.Point(178, 79);
-            this.lblRight.Name = "lblRight";
+            this.lblRight.Name = "MotorDer";
             this.lblRight.Size = new System.Drawing.Size(78, 13);
             this.lblRight.TabIndex = 3;
             this.lblRight.Text = "Motor Derecho";
@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
             // 
             this.lblLeft.AutoSize = true;
             this.lblLeft.Location = new System.Drawing.Point(12, 79);
-            this.lblLeft.Name = "lblLeft";
+            this.lblLeft.Name = "MotorIzq";
             this.lblLeft.Size = new System.Drawing.Size(80, 13);
             this.lblLeft.TabIndex = 2;
             this.lblLeft.Text = "Motor Izquierdo";
@@ -107,7 +107,6 @@ namespace WindowsFormsApp1
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(387, 415);
             this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.DataSourceChanged += new System.EventHandler(this.dataGridView1_DataSourceChanged);
             // 
             // Form1
             // 

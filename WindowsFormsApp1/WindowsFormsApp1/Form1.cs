@@ -34,20 +34,7 @@ namespace WindowsFormsApp1
         {
             List<object> todosLosEventos = unRobot.MostrarBitacora();
             List<EventoSeguirLinea> eventosFiltrados = unRobot.FiltrarBitacora(DateTime.Now.AddHours(-1), DateTime.Now.AddMinutes(-1));
-
-
-            List<EventoSeguirLinea> otraLista = new List<EventoSeguirLinea>();
-            otraLista.Add(new EventoSeguirLinea(true, false));
-            otraLista.Add(new EventoSeguirLinea(false, true));
-            otraLista.Add(new EventoSeguirLinea(true, true));
-            this.dataGridView1.DataSource = otraLista;
-        }
-
-        private void dataGridView1_DataSourceChanged(object sender, EventArgs e)
-        {
-            int bla = this.dataGridView1.RowCount;
-            object b = this.dataGridView1.DataSource;
-            int x = 0;
+            this.dataGridView1.DataSource = eventosFiltrados;
         }
     }
 }

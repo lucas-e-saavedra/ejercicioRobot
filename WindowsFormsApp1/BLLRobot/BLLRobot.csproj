@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="Components\IMotor.cs" />
     <Compile Include="EventoSeguirLinea.cs" />
-    <Compile Include="IConstructorDeRobots.cs" />
     <Compile Include="Movements\Retroceder.cs" />
     <Compile Include="Movements\Avanzar.cs" />
     <Compile Include="Movements\Movimiento.cs" />

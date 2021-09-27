@@ -23,8 +23,9 @@ namespace ConsoleApp1
 
             Console.ReadLine();
             unRobot.Detenerse();
-            List<EventoSeguirLinea> eventos = unRobot.FiltrarBitacora(DateTime.Now.AddHours(-1), DateTime.Now.AddMinutes(-1));
-            eventos.ForEach(
+            List<object> todosLosEventos = unRobot.MostrarBitacora();
+            List<EventoSeguirLinea> eventosFiltrados = unRobot.FiltrarBitacora(DateTime.Now.AddHours(-1), DateTime.Now.AddMinutes(-1));
+            eventosFiltrados.ForEach(
                 item => Console.WriteLine("Fecha:{0} Sensor1: {1} Sensor2: {2}", item.timeStamp, item.sensor1, item.sensor2)
                 );
             Console.ReadLine();
